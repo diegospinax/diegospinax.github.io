@@ -10,7 +10,7 @@ export const ContactButton = ({ children, link }: Props) => {
         <a
             href={link}
             target='_blank'
-            className="flex gap-2.5 px-3 py-1.5 items-center bg-charcoal-blue rounded max-w-max text-white-smoke">
+            className="flex gap-2.5 px-3 py-1.5 items-center bg-charcoal-blue rounded w-full sm:max-w-max text-white-smoke">
             {children}
         </a>
     )

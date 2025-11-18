@@ -12,8 +12,8 @@ export const About = () => {
 
     return (
         <>
-            <div className='flex flex-col gap-4'>
-                <h3 className='text-4xl'>
+            <div className='flex flex-col gap-2 sm:gap-4'>
+                <h3 className='text-2xl sm:text-4xl'>
                     Diego Ospina
                 </h3>
                 <div className='flex gap-4'>
@@ -23,7 +23,7 @@ export const About = () => {
                 </div>
             </div>
 
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-3 sm:gap-4'>
                 <p className={clsx("italic font-semibold", highlightText)}>{t('about.intro_sentence')}</p>
                 <p>{t('about.intro_paragraph.1')}</p>
                 <p>{t('about.intro_paragraph.2')}</p>

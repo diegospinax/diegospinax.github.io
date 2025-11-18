@@ -9,8 +9,8 @@ export const SkillButton = ({ icon, label }: Props) => {
         <div
             className="flex flex-col gap-3 items-center rounded max-w-max mx-auto"
         >
-            <img src={icon} alt={icon} />
-            <p>{label}</p>
+            <img className="size-8 sm:size-9" src={icon} alt={icon} />
+            <p className="hidden sm:block">{label}</p>
         </div>
     )
 }
