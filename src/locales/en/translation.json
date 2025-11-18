@@ -1,0 +1,24 @@
+{
+    "skills": "Skills",
+    "projects": "Projects",
+    "about": {
+        "profession": {
+            "student": "student",
+            "software_engineer": "software engineer"
+        },
+        "intro_sentence": "Software is an artistic expression of human's logic.",
+        "intro_paragraph": {
+            "1": "Hi there! I'm Diego Ospina, a Software Engineer passionate about building end-to-end systems.",
+            "2": "I strongly believe in the statement that opens this self-description, therefore my work reflects software with identity that offers a comforting user experience."
+        },
+        "intro_end": {
+            "base": "Every development carries a trace of",
+            "end_variant_1": "who i am.",
+            "end_variant_2": "who i want to be."
+        }
+    },
+    "contact": {
+        "title": "Networking",
+        "send_email": "Send me an email!"
+    }
+}

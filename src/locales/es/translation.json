@@ -1,0 +1,24 @@
+{
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "about": {
+        "profession": {
+            "student": "estudiante",
+            "software_engineer": "ingeniero de software"
+        },
+        "intro_sentence": "El software es una representación artística de la lógica humana.",
+        "intro_paragraph": {
+            "1": "¡Hola! Soy Diego Ospina, un Ingeniero de Software apasionado por la construcción de sistemas end-to-end.",
+            "2": "Creo sólidamente la afirmación que abre paso a esta auto-descripción, por lo tanto mi trabajo refleja software con identidad que ofrece una experiencia de usuario reconfortante."
+        },
+        "intro_end": {
+            "base": "En cada desarrollo dejo una huella de",
+            "end_variant_1": "quien soy.",
+            "end_variant_2": "quien quiero ser."
+        }
+    },
+    "contact": {
+        "title": "Redes y Contacto",
+        "send_email": "Contáctame por email!"
+    }
+}
