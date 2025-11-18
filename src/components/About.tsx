@@ -29,6 +29,7 @@ export const About = () => {
                 <p>{t('about.intro_paragraph.2')}</p>
                 <p>{t('about.intro_end.base')} {' '}
                     <a href='https://www.linkedin.com/in/diego-ospinax/'
+                    onClick={() => setEndVariant(2)}
                         target='_blank'
                         className={clsx("italic font-semibold", highlightText)}
                     >
