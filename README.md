@@ -1,73 +1,54 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Mi Portafolio
 
-Currently, two official plugins are available:
+Este es mi portafolio personal, desarrollado para mostrar mis habilidades y proyectos. Continuo trabajando en él, por lo tanto es actualizado constantemente
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descripción
 
-## React Compiler
+Este proyecto es una aplicación web de una sola página (SPA) construida con tecnologías modernas de desarrollo web. El propósito principal es servir como una tarjeta de presentación digital, donde puedo mostrar mi experiencia, habilidades y los proyectos en los que he trabajado.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Características
 
-## Expanding the ESLint configuration
+- **Moderno y Responsivo:** Diseño limpio y adaptable a diferentes tamaños de pantalla.
+- **Multilenguaje:** Soporte para múltiples idiomas (inglés y español) gracias a `i18next`.
+- **Componentes Reutilizables:** Construido con una arquitectura basada en componentes para facilitar el mantenimiento y la escalabilidad.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologías Utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **[React](https://react.dev/):** Biblioteca de JavaScript para construir interfaces de usuario.
+- **[Vite](https://vitejs.dev/):** Herramienta de compilación rápida para el desarrollo web moderno.
+- **[TypeScript](https://www.typescriptlang.org/):** Superset de JavaScript que añade tipado estático.
+- **[Tailwind CSS](https://tailwindcss.com/):** Framework de CSS para un diseño rápido y personalizado.
+- **[i18next](https://www.i18next.com/):** Framework de internacionalización para JavaScript.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Estructura del Proyecto
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+El proyecto está organizado de la siguiente manera:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- `src/components`: Contiene los componentes reutilizables de la aplicación.
+- `src/assets`: Almacena los recursos estáticos como imágenes y logos.
+- `src/context`: Gestiona el estado global de la aplicación, como el tema (claro/oscuro).
+- `src/hooks`: Contiene los hooks personalizados de React.
+- `src/locales`: Almacena los archivos de traducción para el soporte multi-idioma.
+- `public/`: Contiene los archivos estáticos que no son procesados por Vite.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts Disponibles
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+En el directorio del proyecto, puedes ejecutar:
+
+### `npm run dev`
+
+Ejecuta la aplicación en modo de desarrollo.
+Abre [http://localhost:5173](http://localhost:5173) para verla en tu navegador.
+
+### `npm run build`
+
+Construye la aplicación para producción en la carpeta `dist`.
+
+### `npm run lint`
+
+Ejecuta el linter para encontrar y corregir problemas en el código.
+
+### `npm run preview`
+
+Ejecuta la aplicación en modo de producción localmente.
