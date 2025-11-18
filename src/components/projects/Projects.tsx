@@ -1,13 +1,14 @@
 import { useTranslation } from 'react-i18next';
+import { SectionHeader } from '../SectionHeader';
 
 export const Projects = () => {
     const { t } = useTranslation();
 
     return (
         <div>
-            <h4 className="text-base sm:text-2xl mb-3 sm:mb-6">{t("projects")}</h4>
+            <SectionHeader content={t("projects")} />
             <div>
-                
+
             </div>
         </div>
     )

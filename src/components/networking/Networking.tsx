@@ -3,6 +3,7 @@ import { ContactButton } from "./ContactButton";
 import github_logo from '../../assets/branches/github.svg';
 import linkedin_logo from '../../assets/branches/linkedin.svg';
 import mail_icon from '../../assets/mail.svg';
+import { SectionHeader } from "../SectionHeader";
 
 export const Networking = () => {
     const { t } = useTranslation();
@@ -29,7 +30,7 @@ export const Networking = () => {
 
     return (
         <div>
-            <h4 className="text-base sm:text-2xl mb-3 sm:mb-6">{t("contact.title")}</h4>
+            <SectionHeader content={t("contact.title")} />
             <div className="flex gap-2 sm:gap-6 justify-center">
                 {networking_data.map((element) =>
                     <ContactButton link={element.link}>
