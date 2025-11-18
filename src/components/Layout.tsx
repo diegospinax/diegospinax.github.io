@@ -10,7 +10,7 @@ export const Layout = () => {
 
     return (
         <div className={
-            clsx('w-svw h-auto select-none',
+            clsx('w-svw min-h-svh select-none',
                 isDarkMode
                     ? ['bg-carbon-black', 'text-white-smoke']
                     : ['bg-white-smoke', 'text-carbon-black']
