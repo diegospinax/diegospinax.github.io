@@ -8,7 +8,7 @@ export const Skills = () => {
     const { t } = useTranslation();
 
     return (
-        <div>
+        <div id='skills'>
             <SectionHeader content={t("skills")} />
             <div className='grid grid-cols-4 gap-y-6'>
                 {icons.map((element, index) =>

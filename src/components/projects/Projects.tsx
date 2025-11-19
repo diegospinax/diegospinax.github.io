@@ -7,7 +7,7 @@ export const Projects = () => {
     const { t } = useTranslation();
 
     return (
-        <div>
+        <div id="projects">
             <SectionHeader content={t("projects")} />
             <div className="grid grid-cols-1 gap-6 mt-8">
                 {projectsData.map((project, index) =>

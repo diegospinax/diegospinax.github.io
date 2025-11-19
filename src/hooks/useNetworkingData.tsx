@@ -6,7 +6,7 @@ export const useNetworkingData = () => {
     const networking_data = [
         {
             link: "https://github.com/diegospinax",
-            icon: <svg className="size-6"
+            icon: <svg className="size-6 mx-auto"
                 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
@@ -23,7 +23,7 @@ export const useNetworkingData = () => {
         },
         {
             link: "https://www.linkedin.com/in/diego-ospinax/",
-            icon: <svg className="size-6 fill-current stroke-none" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            icon: <svg className="size-6 fill-current stroke-none mx-auto" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                 <g id="SVGRepo_iconCarrier">
@@ -45,7 +45,7 @@ export const useNetworkingData = () => {
         },
         {
             link: "",
-            icon: <svg className="size-6 fill-current stroke-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            icon: <svg className="size-6 fill-current stroke-0 mx-auto" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
                 <g id="SVGRepo_iconCarrier">

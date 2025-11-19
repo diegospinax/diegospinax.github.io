@@ -27,6 +27,8 @@ html {
   /* Firefox */
   -ms-overflow-style: none;
   /* IE/Edge */
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
 }
 
 html::-webkit-scrollbar {

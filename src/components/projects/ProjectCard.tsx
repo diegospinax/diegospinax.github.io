@@ -18,7 +18,7 @@ export const ProjectCard = ({ project }: Props) => {
         )}>
             <div className="flex-1 p-6 flex flex-col justify-between order-2 gap-4 md:order-1">
                 <div>
-                    <h3 className={clsx("text-xl mb-2 transition-colors",
+                    <h3 className={clsx("text-base sm:text-xl mb-2 transition-colors",
                         isDarkMode ? "group-hover:text-lilac-ash" : "group-hover:text-lilac-ash-dark"
                     )} >
                         {t(project.title)}
