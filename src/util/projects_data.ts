@@ -1,5 +1,6 @@
 import { type Icon, icons } from "./skill_icons";
 import aqua_img from '../assets/aqua-screenshot.png';
+import coding_img from '../assets/coding.jpg';
 
 interface Repository {
     link: string;
@@ -43,7 +44,7 @@ export const projectsData: Project[] = [
         title: 'medical_scheduling.title',
         description: 'medical_scheduling.description',
         technologies: icons.filter((icon) => medical_scheduling_stack.includes(icon.label)),
-        imageUrl: aqua_img,
+        imageUrl: coding_img,
         repositories: [
             { link: "https://github.com/diegospinax/medical-scheduling-api", type: "backend" },
         ]

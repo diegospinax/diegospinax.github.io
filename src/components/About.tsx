@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { useTheme } from '../hooks/useTheme';
 import clsx from 'clsx';
 import { Typing } from './Typing';
+import photo from '../assets/profile_cocoa.jpeg';
 
 export const About = () => {
     const { t } = useTranslation();
@@ -9,16 +10,21 @@ export const About = () => {
 
     return (
         <>
-            <div className='flex flex-col gap-2 sm:gap-4'>
-                <h3 className='text-2xl sm:text-4xl'>
-                    Diego Ospina
-                </h3>
-                <div className='flex gap-4'>
-                    <p className='opacity-80'>{t('about.profession.software_engineer')}</p>
-                    <span className={clsx("scale-150",
-                        isDarkMode ? "text-lilac-ash" : "text-lilac-ash-dark"
-                    )}>●</span>
-                    <p className='opacity-80'>{t('about.profession.student')}</p>
+            <div className='flex justify-between items-end'>
+                <div className='flex flex-col gap-2 sm:gap-4'>
+                    <h3 className='text-2xl sm:text-4xl'>
+                        Diego Ospina
+                    </h3>
+                    <div className='flex gap-4'>
+                        <p className='opacity-80'>{t('about.profession.software_engineer')}</p>
+                        <span className={clsx("scale-150",
+                            isDarkMode ? "text-lilac-ash" : "text-lilac-ash-dark"
+                        )}>●</span>
+                        <p className='opacity-80'>{t('about.profession.student')}</p>
+                    </div>
+                </div>
+                <div className='hidden sm:block size-36 mr-4 rounded-full overflow-clip'>
+                    <img className='object-cover' src={photo} alt="profile_picture" />
                 </div>
             </div>
 
