@@ -20,5 +20,18 @@
     "contact": {
         "title": "Networking",
         "send_email": "Send me an email!"
+    },
+    "repository": "Repositories",
+    "ecotrack": {
+        "title": "Ecotrack",
+        "description": "Full-stack mobile app that helps companies reduce their carbon footprint by motivating employees to complete simple eco-oriented tasks and lessons."
+    },
+    "aqua": {
+        "title": "Aqua",
+        "description": "Web application for monitoring a company's production line with functionalities for recording and visualizing metrics and indicators."
+    },
+    "medical_scheduling": {
+        "title": "Medical appointment scheduling",
+        "description": "REST API for appointment scheduling in a medical center with complex business rules, authentication and authorization."
     }
 }

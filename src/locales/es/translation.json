@@ -20,5 +20,18 @@
     "contact": {
         "title": "Redes y Contacto",
         "send_email": "Contáctame por email!"
+    },
+    "repository": "Repositorios",
+    "ecotrack": {
+        "title": "Ecotrack",
+        "description": "Aplicación móvil fullstack que mejora la huella de carbono de las empresas, incentivando su personal a contribuir al planeta mediante tareas y lecciones sencillas."
+    },
+    "aqua": {
+        "title": "Aqua",
+        "description": "Aplicación web para el control de la línea productiva de una empresa con funcionalidades de registro y visualización de métricas e indicadores."
+    },
+    "medical_scheduling": {
+        "title": "Agendación de citas médicas",
+        "description": "Rest API para la agendación de citas en un centro médico con reglas de negocio complejas, autenticación y autorización."
     }
 }

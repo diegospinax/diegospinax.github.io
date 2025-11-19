@@ -11,7 +11,12 @@ import mysql_logo from '../assets/branches/mysql.svg';
 import docker_logo from '../assets/branches/docker.svg';
 import figma_logo from '../assets/branches/figma.svg';
 
-export default [
+export interface Icon {
+    icon: string;
+    label: string;
+}
+
+export const icons: Icon[] = [
     {
         icon: angular_logo,
         label: 'Angular'
