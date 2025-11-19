@@ -21,17 +21,17 @@ export const NavBar = () => {
     return (
         <div className="w-full flex justify-between">
             <ToggleThemeBtn />
-            <div className="flex gap-6 items-center ">
+            <div className="flex gap-3 sm:gap-6 items-center ">
                 <a className={navStyle} href="#skills">{t('skills')}</a>
                 <a className={navStyle} href="#projects">{t('projects')}</a>
                 <div
                     onClick={() => setEnglishLang(!isEnglishLang)}
-                    className={clsx("flex text-sm px-2.5 py-1 gap-1 border rounded-lg w-full sm:max-w-max transition-all duration-300",
+                    className={clsx("flex items-center text-sm px-2.5 py-1 gap-1 border rounded-lg w-full sm:max-w-max transition-all duration-300",
                         isDarkMode
                             ? "border-charcoal-blue/20 text-white-smoke hover:border-lilac-ash/50 hover:text-lilac-ash bg-white/5 stroke-white-smoke hover:stroke-lilac-ash"
                             : "border-charcoal-blue hover:border-lilac-ash-dark/90 hover:text-lilac-ash-dark/90 hover:bg-lilac-ash-dark/5 stroke-charcoal-blue hover:stroke-lilac-ash-dark/90 bg-white-smoke drop-shadow"
                     )}>
-                    <svg className="size-5 fill-current stroke-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg className="size-4 sm:size-5 fill-current stroke-0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                         <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                         <g id="SVGRepo_iconCarrier">
