@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import type { Project } from "../../util/projects_data";
-import github_logo from '../../assets/branches/github.svg';
 import { useTheme } from "../../hooks/useTheme";
 import clsx from "clsx";
 
