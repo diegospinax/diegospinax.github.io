@@ -1,30 +1,22 @@
-import { useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next";
 import { ContactButton } from "./ContactButton";
-import github_logo from '../../assets/branches/github.svg';
-import linkedin_logo from '../../assets/branches/linkedin.svg';
-import mail_icon from '../../assets/mail.svg';
+import { SectionHeader } from "../SectionHeader";
+import { useNetworkingData } from "../../hooks/useNetworkingData";
 
 export const Networking = () => {
     const { t } = useTranslation();
-
-    const logoStyles = "size-6"
+    const { networking_data } = useNetworkingData();
 
     return (
         <div>
-            <h4 className="text-2xl mb-6">{t("contact.title")}</h4>
-            <div className="flex gap-6">
-                <ContactButton link="https://github.com/diegospinax">
-                <img className={logoStyles} src={github_logo} alt="github_logo" />
-                    <p>Github</p>
-                </ContactButton>
-                <ContactButton link="https://www.linkedin.com/in/diego-ospinax/">
-                    <img className={logoStyles} src={linkedin_logo} alt="linkedin_logo" />
-                    <p>Linkedin</p>
-                </ContactButton>
-                <ContactButton link="">
-                    <img className={logoStyles} src={mail_icon} alt="mail_icon" />
-                    <p>{t('contact.send_email')}</p>
-                </ContactButton>
+            <SectionHeader content={t("contact.title")} />
+            <div className="flex gap-2 sm:gap-6 justify-center">
+                {networking_data.map((element, index) =>
+                    <ContactButton key={index} link={element.link}>
+                        {element.icon}
+                        <p className="hidden sm:block">{element.label}</p>
+                    </ContactButton>
+                )}
             </div>
         </div>
     )
